@@ -1,9 +1,10 @@
 export const DropDownInput =()=>{
     return (
         <>
-            <div className='pl-2 pr-2 pb-[px] rounded bg-blue-600'>
-                <p className='text-white text-sm font-semibold'>EPIC</p>
-            </div>
+        <select className='border border-gray-300 w-[60%] text-gray-500 outline-none p-1' >
+            <option value="" ><p className=''>Select option</p></option>
+            <option value='Kamello'>Kamello</option>
+        </select>
         </>
     )
 }

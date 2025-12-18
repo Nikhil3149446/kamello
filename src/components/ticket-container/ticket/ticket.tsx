@@ -1,12 +1,12 @@
 import profile from '../../../assets/profile-picture.png';
 import {EpicContainer} from '../../epic/epic-container'
-export const Ticket = ()=>{
+export const Ticket = ({draggedTicket,setDraggedTicket})=>{
 
     return (
         <>
             <div className='w-[96=7%] h-full max-h-[20%] flex-1 border border-gray-300 m-1 mb-2 rounded bg-white' draggable='true'
             onDragStart={()=>{
-                
+                setDraggedTicket(draggedTicket);
             }}
             >
                 <div className='flex flex-col justify-between h-full'>

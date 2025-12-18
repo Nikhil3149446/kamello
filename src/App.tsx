@@ -72,7 +72,7 @@ function App() {
         <div className='flex h-full w-full gap-4 p-4'>
         { Object.entries(ticketTypes).map(([key,value])=>{
           
-        return <TicketContainer key={key} ticketContainerType={value} ticketNumbers={ticketTypesNumber[value]} setTicketTypesNumber={setTicketTypesNumber} draggedTicket={draggedTicket} setDraggedTicket={setDraggedTicket}/>
+        return <TicketContainer key={key} ticketContainerType={value} ticketNumbers={ticketTypesNumber[value]} setTicketTypesNumber={setTicketTypesNumber} draggedTicket={draggedTicket} setDraggedTicket={setDraggedTicket} ticketTypesNumber={ticketTypesNumber}/>
       })
         }
         

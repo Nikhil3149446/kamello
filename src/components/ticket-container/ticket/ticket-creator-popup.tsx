@@ -16,15 +16,32 @@ export const KamelloTicketCreator = ({setShowKamelloTicketCreator}:KamelloTicket
         // onClick={onClose}
       />
 
-      <div className="relative bg-gray-100 rounded w-[50%] h-[70%] p-4 pl-8 flex  flex-col gap-2">
+      <div className="relative bg-gray-100 rounded w-[50%] h-[70%] p-4 pl-8 flex  flex-col gap-3 ">
+        <div className='flex-1 overflow-auto pr-2 pb-10 flex flex-col gap-2'>
         <h1 className='text-xl'>Create Issue</h1>
-        <p className='text-sm'>Project<span className='text-red-700 font-semibold'>*</span></p>
+        {/* <p className='text-sm'>Project<span className='text-red-700 font-semibold'>*</span></p>
         <DropDownInput/>
         <p className='text-sm'>Issue Type<span className='text-red-700 font-semibold'>*</span></p>
+        <DropDownInput/> */}
+        <p className='text-sm'>Ticket Number<span className='text-red-700 font-semibold'>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Number'></input>
+        <p className='text-sm'>Ticket Header<span className='text-red-700 font-semibold'>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Header'></input>
+        <p className='text-sm'>Epic<span className='text-red-700 font-semibold'>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Epic'></input>
+
+        <p className='text-sm'>Kamello Points<span className='text-red-700 font-semibold'>*</span></p>
         <DropDownInput/>
-        <p className='text-sm'>Summary<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Summary'></input>
-        <div className='absolute left-0  bottom-0  h-[50px] w-full flex justify-end'>
+        <p className='text-sm'>Kamello Ticket Status<span className='text-red-700 font-semibold'>*</span></p>
+        <DropDownInput/>
+        <p className='text-sm'>Progress<span className='text-red-700 font-semibold'>*</span></p>
+        <DropDownInput/>
+        <p className='text-sm'>User Id<span className='text-red-700 font-semibold'>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter User Id'></input>
+        <p className='text-sm'>Description<span className='text-red-700 font-semibold'>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Description'></input>
+        </div>
+        <div className='absolute left-0  bottom-0 bg-white h-[50px] w-full flex justify-end'>
             
             <button type='submit' className=' rounded h-fit p-1 mt-2 pl-2 pr-2 bg-blue-600 font-semibold mr-5'>Create</button>
             <button type='submit' className=' rounded p-1 font-semibold mr-5' onClick={()=>{setShowKamelloTicketCreator(false)}}>Cancel</button>

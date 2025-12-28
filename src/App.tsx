@@ -5,6 +5,7 @@ import {Profile} from './components/profile/profile'
 import {DropDownInput} from './components/input/drop-down-input'
 import { KamelloTicketCreator } from './components/ticket-container/ticket/ticket-creator-popup'
 import { useState } from 'react'
+import { SimpleDialog } from './components/ticket-container/ticket/ticket-dialog-box'
 function App() {
   const [showKamelloTicketCreator,setShowKamelloTicketCreator]=useState(false);
   const [isActiveTab,setIsActiveTab]=useState("");
@@ -36,11 +37,16 @@ function App() {
     setIsActiveTab('Dashboard');
   }
 
+  function handleKamelloTicketCreatorClosed(value){
+      setShowKamelloTicketCreator(false);
+
+  }
+
   
   return (
     <>
       <div className='flex flex-col w-full h-screen'>
-        {showKamelloTicketCreator && <KamelloTicketCreator setShowKamelloTicketCreator={setShowKamelloTicketCreator}/>}
+        {showKamelloTicketCreator && <SimpleDialog open={showKamelloTicketCreator} onClose={handleKamelloTicketCreatorClosed}/>}
         <Header />
         <div className='mt-[40px] border-b flex flex-row'>
           <section className='flex flex-row gap-5 ml-4 text-sm'>

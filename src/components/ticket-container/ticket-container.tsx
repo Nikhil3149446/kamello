@@ -22,7 +22,6 @@ export const TicketContainer = ({ticketContainerType,ticketNumbers,setTicketType
                 <p>{ticketContainerType}</p>
             </div>
             {ticketNumbers.map(()=>{
-                {console.log("The value of ticketNumbers is ",ticketNumbers)}
             return <Ticket draggedTicket={ticketContainerType} setDraggedTicket={setDraggedTicket}/>
         })
             }

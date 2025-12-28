@@ -17,18 +17,15 @@ export const KamelloTicketCreator = ({setShowKamelloTicketCreator}:KamelloTicket
       />
 
       <div className="relative bg-gray-100 rounded w-[50%] h-[70%] p-4 pl-8 flex  flex-col gap-3 ">
-        <div className='flex-1 overflow-auto pr-2 pb-10 flex flex-col gap-2'>
+        <div className='flex-1 overflow-auto pr-2 flex flex-col gap-2 mb-10'>
         <h1 className='text-xl'>Create Issue</h1>
-        {/* <p className='text-sm'>Project<span className='text-red-700 font-semibold'>*</span></p>
-        <DropDownInput/>
-        <p className='text-sm'>Issue Type<span className='text-red-700 font-semibold'>*</span></p>
-        <DropDownInput/> */}
-        <p className='text-sm'>Ticket Number<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Number'></input>
+     
+        <p className='text-sm'>Ticket Number<span className='text-red-700 font-semibold '>*</span></p>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none rounded' placeholder='Enter Ticket Number'></input>
         <p className='text-sm'>Ticket Header<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Header'></input>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none rounded' placeholder='Enter Ticket Header'></input>
         <p className='text-sm'>Epic<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Epic'></input>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none rounded' placeholder='Enter Ticket Epic'></input>
 
         <p className='text-sm'>Kamello Points<span className='text-red-700 font-semibold'>*</span></p>
         <DropDownInput/>
@@ -37,9 +34,9 @@ export const KamelloTicketCreator = ({setShowKamelloTicketCreator}:KamelloTicket
         <p className='text-sm'>Progress<span className='text-red-700 font-semibold'>*</span></p>
         <DropDownInput/>
         <p className='text-sm'>User Id<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter User Id'></input>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none rounded' placeholder='Enter User Id'></input>
         <p className='text-sm'>Description<span className='text-red-700 font-semibold'>*</span></p>
-        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none' placeholder='Enter Ticket Description'></input>
+        <input className='border border-gray-300 w-[60%] p-1 pl-2 outline-none rounded' placeholder='Enter Ticket Description'></input>
         </div>
         <div className='absolute left-0  bottom-0 bg-white h-[50px] w-full flex justify-end'>
             
